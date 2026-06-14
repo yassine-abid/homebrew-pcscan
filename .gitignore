@@ -1,0 +1,10 @@
+# personal scan data - never commit (contains your machine's details)
+baseline.txt
+baseline.bak
+baseline.tmp
+report-*.txt
+*.log
+
+# OS junk
+.DS_Store
+Thumbs.db
