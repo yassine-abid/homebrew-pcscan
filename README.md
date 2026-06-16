@@ -17,15 +17,15 @@ Every check is read-only. `sudo`/Administrator is optional (reveals more) but ne
 ## Install
 
 ### macOS / Linux
+
 ```bash
-git clone <your-repo-url> pcscan && cd pcscan
+git clone git@github.com:yassine-abid/pcscan.git pcscan && cd pcscan
 ./install.sh            # installs the `pcscan` command + ClamAV + signatures
 ./install.sh --no-av    # script only, skip ClamAV
 ```
-
 ### Windows (PowerShell)
 ```powershell
-git clone <your-repo-url> pcscan; cd pcscan
+git clone git@github.com:yassine-abid/pcscan.git pcscan; cd pcscan
 powershell -ExecutionPolicy Bypass -File .\install.ps1              # pcscan + update Defender
 powershell -ExecutionPolicy Bypass -File .\install.ps1 -WithClamAV  # also install ClamAV via winget
 ```
