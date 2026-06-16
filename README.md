@@ -16,13 +16,26 @@ Every check is read-only. `sudo`/Administrator is optional (reveals more) but ne
 
 ## Install
 
-### macOS / Linux
+### macOS / Linux (Homebrew)
+
+```bash
+brew install yassine-abid/pcscan/pcscan
+```
+
+One command — it installs the `pcscan` command and the ClamAV engine, and keeps
+both up to date with `brew upgrade`. To update signatures after install, run
+`freshclam`.
+
+<details>
+<summary>Alternative: install from source (no Homebrew)</summary>
 
 ```bash
 git clone git@github.com:yassine-abid/pcscan.git pcscan && cd pcscan
 ./install.sh            # installs the `pcscan` command + ClamAV + signatures
 ./install.sh --no-av    # script only, skip ClamAV
 ```
+</details>
+
 ### Windows (PowerShell)
 ```powershell
 git clone git@github.com:yassine-abid/pcscan.git pcscan; cd pcscan
